@@ -3,7 +3,8 @@ from odoo import models, fields, api
 
 class base_electronicos(models.Model):
     _name = 'base_electronicos.tabla'
-
+    _description = 'base_electronicos.tabla'
+    
     name = fields.Char('Nombre')
     tipo_documento = fields.Char(string="Documento")# , compute='documento',store=True
     
