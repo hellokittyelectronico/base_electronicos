@@ -3,14 +3,13 @@
     'name': "base_electronicos",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+        Base para modulos de documentos electronicos""",
 
     'description': """
-        Long description of module's purpose
+        Base para modulos de documentos electronicos
     """,
 
-    'author': "My Company",
+    'author': "Alan",
     'website': "http://www.navegasoft.com",
 
     # Categories can be used to filter modules in modules listing

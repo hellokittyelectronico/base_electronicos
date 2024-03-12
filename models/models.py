@@ -3,6 +3,7 @@ from odoo import models, fields, api
 
 class base_electronicos(models.Model):
     _name = 'base_electronicos.tabla'
+    _description = "tabla para los documentos electronicos"
 
     name = fields.Char('Nombre')
     tipo_documento = fields.Char(string="Documento")# , compute='documento',store=True
@@ -13,7 +14,7 @@ class base_electronicos(models.Model):
         ('Nota_credito', 'Nota_credito'),
         ('Documento_soporte', 'Documento_soporte'),
     ], string='Tipo documento')
-    mp_id = fields.One2many('base_electronicos.line','mp_id', ondelete='cascade')
+    mp_id = fields.One2many('base_electronicos.line','mp_id') #, ondelete='cascade'
 
 
 class line_nomina(models.Model):
@@ -34,4 +35,4 @@ class line_nomina(models.Model):
     titulo = fields.Char('Titulo')
     link = fields.Char('Link')
 
-    mp_id = fields.Many2one('base_electronicos.tabla', string='Campos',ondelete='restrict', index=True)
+    mp_id = fields.Many2one('base_electronicos.tabla', string='Campos', index=True) #,ondelete='restrict'
