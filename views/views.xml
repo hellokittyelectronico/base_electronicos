@@ -34,6 +34,19 @@
       </field>
     </record>
 
+    <record id="base_electronicos.form_inheretic" model="ir.ui.view">
+      <field name="name">base_electronicos.form_inheretic</field>
+      <field name="model">base_electronicos.tabla</field>
+      <field name="inherit_id" ref="base_electronicos.form"/>
+      <field name="arch" type="xml">
+          <xpath expr="//field[@name='name']" position="after">
+              <field name="url" string="Url"  required='True'/>
+          </xpath>
+      </field>
+  </record>
+
+
+
     <record model="ir.actions.act_window" id="base_electronicos.action_window">
       <field name="name">Listado Documentos</field>
       <field name="res_model">base_electronicos.tabla</field>

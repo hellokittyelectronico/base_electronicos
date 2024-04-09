@@ -14,6 +14,7 @@ class base_electronicos(models.Model):
         ('Nota_credito', 'Nota_credito'),
         ('Documento_soporte', 'Documento_soporte'),
     ], string='Tipo documento')
+    url = fields.Char("URL endpoint",default="https://conector.navegasoft.com/")
     mp_id = fields.One2many('base_electronicos.line','mp_id') #, ondelete='cascade'
 
 
