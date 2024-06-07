@@ -13,8 +13,9 @@ class base_electronicos(models.Model):
         ('Nota_debito', 'Nota_debito'),
         ('Nota_credito', 'Nota_credito'),
         ('Documento_soporte', 'Documento_soporte'),
+        ('Pos', 'Pos'),
     ], string='Tipo documento')
-    url = fields.Char("URL endpoint",default="https://conector.navegasoft.com/admonclientes") #url 
+    url = fields.Char("URL endpoint",default="https://odoo15.navegasoft.com/admonclientes") #url 
     mp_id = fields.One2many('base_electronicos.line','mp_id') #, ondelete='cascade'
 
 
