@@ -27,6 +27,7 @@
         'views/views.xml',
         'views/templates.xml',
     ],
+    'installable': True,
     # only loaded in demonstration mode
     'demo': [
         'demo/demo.xml',
