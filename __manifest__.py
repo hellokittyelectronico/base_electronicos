@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': "base_electronicos",
-
+    'version': '19.0.0.0',
     'summary': """
         Base para modulos de documentos electronicos""",
 
